@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>FLAT DESIGN</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="">
+<link rel="shortcut icon" href="images/favicon/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="images/favicon/flat-design-touch.png">
+<script src="js/jquery.min.js"></script>
+<style>
+/* 모바일용 CSS */
+
+/* 기본 CSS */
+#wrap{
+display:flex;
+flex-flow:column nowrap;
+width:80%;
+margin:0 auto;
+max-width:1200px;
+}
+
+#wrap section{
+box-sizing:border-box;
+}
+
+/* 태블릿용 CSS */
+@media all and (min-width:768px){
+/* 기본 CSS */
+#wrap{
+flex-flow:row wrap;
+}
+}
+
+/* PC용 CSS */
+@media all and (min-width:960px){
+/* 기본 CSS */
+#wrap{
+position:relative;
+width:90%;
+}
+}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<section class="info_section">
+		<ul class="info_list">
+			<li><a href="index.html"><img src="images/s_images/info_icon_01.png" alt=""></a></li>
+			<li><a href=""><img src="images/s_images/info_icon_02.png" alt=""></a></li>
+			<li><a href=""><img src="images/s_images/info_icon_03.png" alt=""></a></li>
+			<li><a href=""><img src="images/s_images/info_icon_04.png" alt=""></a></li>
+		</ul>
+		</section>
+	
+	<header class="header">
+		<h1 class="logo">
+			<a href="index.html">flat<br>design</a>
+		</h1>
+		<nav class="nav">
+			<ul class="gnb">
+				<li><a href="index.html">홈</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+				<li><a href="introduce.html">플랫 디자인이란?</a><span class="sub_menu_toggle_btn">하위메뉴 토글버튼</span></li>
+				<li><a href="gallery.html">갤러리</a><span class="sub_menu_toggle_btn">하위메뉴 토글버튼</span></li>
+				<li><a href="board.html">문의사항</a><span class="sub_menu_toggle_btn">하위메뉴 토글버튼</span></li>
+			</ul>
+		</nav>
+		<span class="menu_toggle_btn">전체 메뉴 토글 버튼</span>
+	</header>
+	</div>
+</body>
+</html>
